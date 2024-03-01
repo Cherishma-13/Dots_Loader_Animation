@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .load{
+            width: 100px;
+            height: 100px;
+            margin: 250px auto;
+        }
+        .load hr{
+            border: 0;
+            margin: 0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border-radius: 50%;
+            animation: spin 2s ease infinite;
+        }
+    .load :first-child{
+        background: rgb(175, 175, 236);
+        animation-delay: -1.5s;
+    }
+    .load :nth-child(2){
+        background: rgb(184, 233, 184);
+        animation-delay: -1s;
+    }
+    .load :nth-child(3){
+        background: rgb(206, 178, 235);
+        animation-delay: -0.5s;
+    
+    }
+    .load :last-child{
+        background-color: rgb(155, 126, 152);
+    }
+    @keyframes spin {
+        0%,100%{
+            transform: translate(0);
+        }
+        25%{
+            transform: translate(160%);
+        }
+        50%{
+            transform: translate(160%,160%);
+        }
+        75%{
+            transform: translate(0,160%);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="load">
+        <hr><hr><hr><hr>
+    </div>
+</body>
+</html>
